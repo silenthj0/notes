@@ -1254,7 +1254,7 @@ $$
 
 ---
 
-# 第二部分：《Quantum Algorithm Implementations for Beginners》补充
+## 第二部分：《Quantum Algorithm Implementations for Beginners》补充
 
 ## 12. 文献定位与摘要翻译
 

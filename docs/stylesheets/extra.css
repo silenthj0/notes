@@ -103,3 +103,31 @@ body,
   overflow-y: hidden;
   padding-block: 0.25rem;
 }
+
+@media screen and (min-width: 60em) {
+  .md-sidebar--secondary .md-sidebar__scrollwrap {
+    overflow-y: scroll;
+    overscroll-behavior: contain;
+    scrollbar-color: #b96380 #f7e9ee;
+    scrollbar-width: auto;
+  }
+
+  .md-sidebar--secondary .md-sidebar__scrollwrap::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .md-sidebar--secondary .md-sidebar__scrollwrap::-webkit-scrollbar-track {
+    background: #f7e9ee;
+    border-radius: 4px;
+  }
+
+  .md-sidebar--secondary .md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+    background: #b96380;
+    border: 2px solid #f7e9ee;
+    border-radius: 4px;
+  }
+
+  .md-sidebar--secondary .md-sidebar__scrollwrap::-webkit-scrollbar-thumb:hover {
+    background: #94405f;
+  }
+}
