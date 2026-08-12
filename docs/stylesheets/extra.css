@@ -1,0 +1,35 @@
+:root {
+  --md-text-font: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+  --md-code-font: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+}
+
+.md-typeset {
+  line-height: 1.8;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  letter-spacing: 0;
+}
+
+.md-typeset .pdf-download {
+  align-items: center;
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
+  display: inline-flex;
+  gap: 0.35rem;
+  margin: 0 0 1rem;
+}
+
+.md-typeset .pdf-download:hover {
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-bg-color);
+}
+
+.md-typeset mjx-container[display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-block: 0.25rem;
+}

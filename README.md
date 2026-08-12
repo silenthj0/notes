@@ -1,45 +1,30 @@
 # 学习笔记
 
-这是一个基于 [Quartz 4](https://quartz.jzhao.xyz/) 的中文学习笔记网站，内容按学科整理，并支持在笔记旁存放 PDF、图片及其他附件。
+这是使用 [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) 生成的中文学习笔记网站。笔记按课程整理，支持全文搜索、数学公式、深浅色模式和配套 PDF。
 
-## 目录结构
+网站地址：[https://silenthj0.github.io/notes/](https://silenthj0.github.io/notes/)
 
-```text
-notes/
-├─ content/
-│  ├─ 物理/
-│  ├─ 数学/
-│  └─ 其他笔记/
-├─ 图片与附件/
-├─ quartz/                 # Quartz 程序与样式
-├─ quartz.config.ts        # 中文界面、站点地址和蓝粉主题
-├─ quartz.layout.ts        # 页面布局
-└─ README.md
-```
+## 添加笔记
 
-配套 PDF 建议与对应笔记放在同一目录，例如：
+把 Markdown 放入 `docs/` 下对应的课程目录。若有配套 PDF，将它与 Markdown 放在同一目录并使用相同文件名：
 
 ```text
-content/物理/
+docs/物理/
 ├─ 力学基础.md
 └─ 力学基础.pdf
 ```
 
-在 Markdown 中使用相对链接即可：
-
-```markdown
-[在线查看或下载配套 PDF](./力学基础.pdf)
-```
+网站构建时会自动在笔记标题下加入 PDF 按钮，不需要手写下载链接。新增 Markdown 后提交并推送到 `main`，GitHub Actions 会自动更新网站。
 
 ## 本地预览
 
-需要 Node.js 22 或更高版本：
+需要 Python 3.10 或更高版本：
 
 ```powershell
-npm ci
-npx quartz build --serve
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+mkdocs serve
 ```
 
-浏览器访问 `http://localhost:8080`。推送到 `main` 分支后，GitHub Actions 会自动构建并发布网站。
-
-首次部署前，需要在仓库的 **Settings > Pages > Build and deployment > Source** 中选择 **GitHub Actions**。
+浏览器访问 `http://127.0.0.1:8000/notes/`。首次部署前，需要在仓库的 **Settings > Pages > Build and deployment > Source** 中选择 **GitHub Actions**。
