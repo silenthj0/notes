@@ -1,6 +1,72 @@
+@font-face {
+  font-family: "LXGW WenKai Mono Web";
+  font-style: normal;
+  font-weight: 300 400;
+  font-display: swap;
+  src:
+    local("霞鹜文楷等宽 Light"),
+    local("LXGW WenKai Mono Light"),
+    url("../fonts/LXGWWenKaiMono-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "LXGW WenKai Mono Web";
+  font-style: normal;
+  font-weight: 500 900;
+  font-display: swap;
+  src:
+    local("霞鹜文楷等宽 Medium"),
+    local("LXGW WenKai Mono Medium"),
+    url("../fonts/LXGWWenKaiMono-Medium.woff2") format("woff2");
+}
+
 :root {
-  --md-text-font: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+  --md-text-font: "LXGW WenKai Mono Web", "霞鹜文楷等宽", "LXGW WenKai Mono", "Microsoft YaHei", sans-serif;
   --md-code-font: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+  --md-default-bg-color: #ffffff;
+  --md-default-bg-color--light: #ffffff;
+  --md-default-bg-color--lighter: #ffffff;
+  --md-default-bg-color--lightest: #ffffff;
+  --md-accent-fg-color: #b43b62;
+}
+
+body,
+.md-container,
+.md-main {
+  background-color: #ffffff;
+}
+
+.md-header,
+.md-tabs {
+  background: linear-gradient(100deg, #8f2857 0%, #bd5578 44%, #f3d9e2 76%, #ffffff 100%);
+}
+
+.md-header {
+  color: #ffffff;
+}
+
+.md-header__title,
+.md-header__button.md-logo,
+.md-header__button[for="__drawer"] {
+  color: #ffffff;
+}
+
+.md-search__icon,
+.md-source {
+  color: #752044;
+}
+
+.md-header__button[for="__search"] {
+  color: #752044;
+}
+
+.md-search__form {
+  background-color: rgb(255 255 255 / 58%);
+}
+
+.md-search__input,
+.md-search__input::placeholder {
+  color: #61203d;
 }
 
 .md-typeset {
@@ -15,17 +81,21 @@
 
 .md-typeset .pdf-download {
   align-items: center;
-  border-color: var(--md-accent-fg-color);
-  color: var(--md-accent-fg-color);
+  background-color: #fbe7ec;
+  border: 1px solid #e7a1b4;
+  color: #a52f55;
   display: inline-flex;
-  gap: 0.35rem;
-  margin: 0 0 1rem;
+  font-size: 0.72rem;
+  gap: 0.25rem;
+  line-height: 1.25;
+  margin: 0 0 0.85rem;
+  padding: 0.35rem 0.65rem;
 }
 
 .md-typeset .pdf-download:hover {
-  background-color: var(--md-accent-fg-color);
-  border-color: var(--md-accent-fg-color);
-  color: var(--md-accent-bg-color);
+  background-color: #f5d0da;
+  border-color: #d77a96;
+  color: #842040;
 }
 
 .md-typeset mjx-container[display="true"] {

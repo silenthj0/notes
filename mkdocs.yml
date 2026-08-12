@@ -10,20 +10,9 @@ theme:
   language: zh
   font: false
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: blue
-      accent: pink
-      toggle:
-        icon: material/brightness-7
-        name: 切换到深色模式
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: blue
-      accent: pink
-      toggle:
-        icon: material/brightness-4
-        name: 切换到浅色模式
+    scheme: default
+    primary: pink
+    accent: pink
   features:
     - content.action.edit
     - content.code.copy
