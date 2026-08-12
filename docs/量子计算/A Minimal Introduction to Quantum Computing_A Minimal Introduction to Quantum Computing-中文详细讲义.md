@@ -1030,7 +1030,7 @@ $$
 两个基本公式是
 
 $$
-H|0\rangle=\frac{|0\rangle+|1\rangle}{\sqrt2},qquad
+H|0\rangle=\frac{|0\rangle+|1\rangle}{\sqrt2},\qquad
 H|1\rangle=\frac{|0\rangle-|1\rangle}{\sqrt2}.
 $$
 
@@ -1231,7 +1231,7 @@ P(x)=|c_x|^2,\quad U^\dagger U=I
 $$
 
 $$
-H|0\rangle=|+\rangle,qquad H|1\rangle=|-\rangle
+H|0\rangle=|+\rangle,\qquad H|1\rangle=|-\rangle
 $$
 
 $$
